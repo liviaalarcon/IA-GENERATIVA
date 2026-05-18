@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Sistema de Manutenção</title>
+  <link rel="stylesheet" href="CSS/estilos.css">
+</head>
+
+<body>
+
+<header>
+  Sistema de Manutenção Industrial
+</header>
+
+<div class="container">
+
+  <!-- MENU -->
+  <div id="menu">
+    <h2>Escolha uma tela</h2>
+    <button class="btn-primary" onclick="mostrarTela('formulario')">Operador</button>
+    <button class="btn-success" onclick="mostrarTela('dashboard')">Gerente</button>
+  </div>
+
+  <!-- TELA 1 -->
+  <div id="formulario" class="hidden">
+    <h2>Solicitar Suporte</h2>
+
+    <select id="maquina">
+      <option value="">Selecione a Máquina</option>
+      <option>Injetora</option>
+      <option>Torno</option>
+      <option>Prensa</option>
+      <option>Esteira</option>
+      <option>Corte</option>
+
+
+    </select>
+
+    <select id="gravidade">
+      <option value="">Gravidade</option>
+      <option>Baixa</option>
+      <option>Média</option>
+      <option>Alta</option>
+    </select>
+
+    <input type="date" id="data">
+    <input type="text" id="setor" placeholder="Setor">
+
+    <br>
+
+    <button class="btn-danger" onclick="criarChamado()">Solicitar Suporte</button>
+    <br>
+    <button onclick="voltar()">Voltar</button>
+  </div>
+
+  <!-- TELA 2 -->
+  <div id="dashboard" class="hidden">
+    <h2>Painel de Chamados</h2>
+    <div id="listaChamados"></div>
+    <button onclick="voltar()">Voltar</button>
+  </div>
+
+</div>
+
+<script src="js/script.js"></script>
+</body>
+</html>

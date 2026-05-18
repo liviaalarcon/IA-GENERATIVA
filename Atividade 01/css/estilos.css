@@ -1,0 +1,63 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #FFCEE3;
+  margin: 0;
+  text-align: center;
+}
+
+header {
+  background: #FF4081;
+  color: white;
+  padding: 15px;
+  font-size: 20px;
+}
+
+.container {
+  padding: 60px;
+}
+
+.hidden {
+  display: none;
+}
+
+button {
+  padding: 15px;
+  margin: 10px;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.btn-primary {
+  background: #AE2448;
+  color: white;
+}
+
+.btn-success {
+  background: #AE2448;
+  color: white;
+}
+
+.btn-danger {
+  background: #FF4081;
+  color: white;
+}
+
+input, select {
+  padding: 10px;
+  margin: 10px;
+  width: 80%;
+  max-width: 300px;
+  font-size: 16px;
+}
+
+.card {
+  background: #FFB6C1;
+  padding: 15px;
+  margin: 10px auto;
+  width: 90%;
+  max-width: 400px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
